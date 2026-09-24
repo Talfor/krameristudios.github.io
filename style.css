@@ -9,7 +9,7 @@
 
 body {
     background-color: black;
-    background-image: url("/images/mainbackground.jpg");
+    background-image: url("images/mainbackground.jpg");
 }
 
 #featured .modlist li {
@@ -64,7 +64,7 @@ header {
     background: #026c99; 
     color: white;  
     text-align: center; 
-    background-image: url("/images/eclipsebackground.jpg");
+    background-image: url("images/eclipsebackground.jpg");
     background-size: 100%;
     margin: 0;
     padding: 0; 
@@ -158,7 +158,7 @@ nav a:hover {
 
 #banner, #description {
     background-color: black;
-    background-image: url("/images/cosmicbackground.jpg");
+    background-image: url("images/cosmicbackground.jpg");
     background-size: cover;
     color:lightcyan;
     text-shadow: 
