@@ -1,0 +1,13 @@
+Krameri Studios Website
+______________________________________________________________________________________
+
+downloads/
+    calamitas/
+        calamitas-v.0.0.22.5-32.txt/ "Calamitas Download #1"
+        calamitas-v.0.0.22.5-77.txt/ "Calamitas Download #2"
+
+homepage/
+    projectpages/
+        calamitas.html/ "Project Page for Supreme Calamitas Mod. Likely to get switched for Calamity Cubic."
+    about.html/ "Webpage about screen. Defines the project."
+    dog_concept.html/ "AI Generated April Fool's Project."
