@@ -103,7 +103,7 @@ function hud3(){if(DBG)txt('🛠 DEBUG · Deaths: '+deaths,W-16,H-64,16,'#ffb02e
  if(B.fin==3)txt('THE STAR BURNS',W/2,H*.18,22,'#ffb36b');
  if(!B.dead&&!B.fin)txt('Boss damage '+Math.round(dmgMul()*100)+'%',W/2,98,12,'#ffb36b');
  if(B.fin==4){const a=Math.min(1,B.t4/.6);ctx.fillStyle='rgba(255,255,255,'+a+')';ctx.fillRect(0,0,W,H);
-  if(B.t4>.9){ctx.globalAlpha=Math.min(1,(B.t4-.9)/.8);ctx.fillStyle='#000';ctx.font='bold '+Math.round(Math.min(W*.045,52)*(secretOK()?.78:1))+'px "Michroma","Trebuchet MS",sans-serif';ctx.textAlign='center';ctx.fillText(secretOK()?'Claude Sonnet 5.5 coded everything =D':'The Devourer has been Slain',W/2,H/2);ctx.globalAlpha=1}}}
+  if(B.t4>.9){ctx.globalAlpha=Math.min(1,(B.t4-.9)/.8);ctx.fillStyle='#000';ctx.font='bold '+Math.round(Math.min(W*.045,52)*(secretOK()?.78:1))+'px "Michroma","Trebuchet MS",sans-serif';ctx.textAlign='center';{const sl=secretOK()?'Claude Sonnet 5.5 coded everything =D':'The Devourer has been Slain';let fz=+((String(ctx.font).match(/(\d+(?:\.\d+)?)px/)||[0,40])[1]);while(ctx.measureText(sl).width>W*.9&&fz>12){fz-=2;ctx.font=String(ctx.font).replace(/\d+(?:\.\d+)?px/,fz+'px')}ctx.fillText(sl,W/2,H/2)}ctx.globalAlpha=1}}}
 function emerge(x,y){B.px=x;B.py=y;B.vis=1;B.em=0;B.lx=x;B.ly=y;B.hid=0;B.av=0;for(const g of B.s){g.x=x;g.y=y;g.o=1}}
 function comeback(){const a=rnd(-PI*.9,-PI*.1),x=cl(P.x+Math.cos(a)*850,120,WW-120),y=cl(P.y+Math.sin(a)*850,80,GY-80);B.ang=Math.atan2(P.y-y,P.x-x);B.spd=600;emerge(x,y)}
 function anchor(){const a=rnd(-PI*.95,-PI*.05);B.wx=cl(P.x+Math.cos(a)*800,150,WW-150);B.wy=cl(P.y+Math.sin(a)*800,100,GY-100)}
